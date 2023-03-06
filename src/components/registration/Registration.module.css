@@ -1,0 +1,9 @@
+.reg {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  font-weight: 900;
+  align-items: center;
+  margin: 200px auto;
+  color: white;
+}
