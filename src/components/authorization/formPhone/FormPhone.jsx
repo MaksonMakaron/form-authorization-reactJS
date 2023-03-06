@@ -19,7 +19,7 @@ const FormPhone = () => {
   };
 
   const onChanePhone = (e) => {
-    setPhone(e.target.value);
+    setPhone(e.target.value.replaceAll(' ', '').replaceAll('_', ''));
     setError(false);
     setErrorMessage('');
   };

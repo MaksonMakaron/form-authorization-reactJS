@@ -17,6 +17,10 @@ const FormLogin = (props) => {
 
   const signIn = (e) => {
     e.preventDefault();
+    setErrorLogin(false);
+    setErrorMessageLogin('');
+    setErrorPassword(false);
+    setErrorMessagePassword('');
 
     if (login === '') {
       setErrorMessageLogin('Введите логин');
