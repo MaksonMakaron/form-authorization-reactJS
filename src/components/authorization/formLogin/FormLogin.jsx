@@ -31,7 +31,7 @@ const FormLogin = (props) => {
       setErrorPassword(true);
     }
 
-    if (!errorLogin && !errorPassword) {
+    if (login !== '' && password !== '') {
       if (EMAIL_REGEXP.test(login)) {
         if (login === user.email && password === user.password) {
           alert('Авторизация успешна');
